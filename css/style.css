@@ -7,15 +7,16 @@ nav {
 		position: fixed;
 		height: 60px;
 		background: #fff;
-		padding: 20 0 0 0;
+		padding: 15 0 0 0;
 }
 nav ul {
 	width: 900px;
 	margin: 0;
+	padding-left: 200px;
 }
 nav ul li {
 	display: inline;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 15px 0px 15px;
 	width: 150px;
 	text-align: left;
 }
@@ -24,18 +25,19 @@ nav ul li {
 }
 nav ul li a {
 	line-height: 40px;
-	font-size: 20px;
+	font-size: 12px;
 	text-decoration: none;
 	color: #515151;
+	font-family: 'Arial';
 }
 nav ul li a:hover {
 	color: #000000;
 }
 nav ul li a.rebelteam {
-	color: #CACACA;
-	font-size: 28px;
+	color: #8B0000;
+	font-size: 22px;
 	font-family: 'Chewy', cursive;
-	font-weight: 800;
+	font-weight:800;
 }
 /*Главная страница*/
 div.header-content {
@@ -46,7 +48,6 @@ div.header-content {
 div.firstpage {
 	height: 1100;
 	padding: 0 150 0 150;
-	display: block;
 }
 div.div1 {
 	background: #D76C6C;
@@ -55,6 +56,12 @@ div.div1 {
 	border-radius: 20px 20px 0px 0px;
 	text-align: center;
 	color: #fff;
+}
+div.div2 {
+	border: 1px solid #D76C6C;
+	border-radius: 0px 0px 20px 20px;
+	width: 750;
+	text-align: left;
 }
 p.textrules {
 	color: #434343;
@@ -79,13 +86,7 @@ span.tegs {
 /*информация о конкурсе*/
 div.secondpage {
 	background-image: url('bg2.jpg');
-	height: 500;
-}
-div.div2 {
-	border: 1px solid #D76C6C;
-	border-radius: 0px 0px 20px 20px;
-	width: 750;
-	text-align: left;
+	height: 1000;
 }
 h3.header-competition {
 	text-align: center;
@@ -97,4 +98,18 @@ hr.hr2 {
 	height: 3;
 	background: white;
 	width: 115;
+}
+ul.foodvar {
+		
+		height: 60px;
+		padding: 45 250 45 250;		
+}
+li.foodln {
+		padding: 80 80 80 90;
+		font-size: 28;
+		color: white;
+}
+ul li {
+		display: inline;
+        padding: 0 40 0 40;
 }
