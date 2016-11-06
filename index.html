@@ -1,6 +1,7 @@
 ﻿<html>
 <head>
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
 </head>
 <body>
 <nav>
@@ -89,6 +90,18 @@
         <h3 class="header-competition">Competititon</h3>
         <hr class="hr2">
         <br><br>
+        <div class="competition-rules">
+         А вот и главная составляющая нашего сайта и одна из главных составляющих туртропы - конкурс еды.<br>
+                Каждый год выбираются лучшие блюда в 5 номинациях:
+                <ul>
+                    <li>Лучшее блюдо</li><br>
+                    <li>Самое креативное блюдо</li><br>
+                    <li>Самое тематическое блюдо</li><br>
+                    <li>Самое изысканное блюдо</li><br>
+                    <li>Самая большая порция</li><br>
+                </ul>
+Предлагаем вам посмотреть результаты прошлых лет, а так же желаем удачи в этом непростом, но увлекательном состязании. 
+        </div>
         <div class="ull">
             <center>
                 <ul class="foodvar">
@@ -104,19 +117,73 @@
         <hr class="hr3">
         <center>
             <h3 class="header3">Results</h3>
-            <div class="commondiv1">
+        
+            <div class="commondiv">
                 <div class="block1">
                     2016
-                </div><br>
+                </div>
+                <br>
                 <div class="block2">
-                    First place: I am Creativity: Ivan Shaveko<br>
+                    First place: I am<br>
+                    Creativity: Ivan Shaveko<br>
                     Biggest: Vital Mazannik<br>
                     Delicious: Pislyii Gay<br>
-                    Thematic: Feteshist<br>
+                    Thematic: Feteshist
+                </div>
+            </div>
+            <div class="commondiv">
+                <div class="block1">
+                    2015
+                </div>
+                <br>
+                <div class="block2">
+                    First place: I am<br>
+                    Creativity: Ivan Shaveko<br>
+                    Biggest: Vital Mazannik<br>
+                    Delicious: Pislyii Gay<br>
+                    Thematic: Feteshist
+                </div>
+            </div>
+            <div class="commondiv">
+                <div class="block1">
+                    2014
+                </div>
+                <br>
+                <div class="block2">
+                    First place: I am<br>
+                    Creativity: Ivan Shaveko<br>
+                    Biggest: Vital Mazannik<br>
+                    Delicious: Pislyii Gay<br>
+                    Thematic: Feteshist
                 </div>
             </div>
         </center>
     </div>
 </section>
+
+
+
+
+
+<script>
+function scrollToDiv(element,navheight){
+    var offset = element.offset();
+    var offsetTop = offset.top;
+    var totalScroll = offsetTop-navheight;
+
+    $('body,html').animate({
+            scrollTop: totalScroll
+    }, 800);
+}
+$('nav ul li a').click(function(){
+    var el = $(this).attr('href');
+    var elWrapped = $(el);
+
+    scrollToDiv(elWrapped,40);
+
+    return false;
+});
+
+</script>
 </body>
 </html>

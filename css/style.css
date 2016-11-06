@@ -31,7 +31,7 @@ nav ul li a {
 	font-family: 'Arial';
 }
 nav ul li a:hover {
-	color: #000000;
+	color: #D76C6C;
 }
 nav ul li a.rebelteam {
 	color: #8B0000;
@@ -85,8 +85,9 @@ span.tegs {
 }
 /*информация о конкурсе*/
 div.secondpage {
+	display: block; 
 	background-image: url('bg2.jpg');
-	height: 1000;
+	
 }
 h3.header-competition {
 	text-align: center;
@@ -99,6 +100,18 @@ hr.hr2 {
 	background: white;
 	width: 115;
 }
+div.competition-rules {
+	padding-left: 210px;
+	padding-right: 210px;
+	text-align: center;
+	font-size: 20px;
+	color: #830B0B;
+	font-family: 'Arial';
+}
+div.competition-rules ul li {
+	list-style-type: none;
+	
+}
 ul.foodvar {
 
   		height: 60px;
@@ -108,7 +121,7 @@ ul.foodvar {
   }
 
   ul li {
-  		display: inline;
+  		display: inline-block;
                   padding: 0 40 0 0;
   }
 
@@ -144,7 +157,7 @@ ul.foodvar {
   			src: url(BuxtonSketch.ttf);
   }
   div.block1 {
-
+  		display: block;
   		font-size: 32;
   		width: 301.5;
   		border-radius: 5px 5px 0px 0px;
@@ -155,21 +168,20 @@ ul.foodvar {
   		font-family: Alabama;
 
   }
-
-  div.commondiv1 {
-  		float: left;
-  		padding-left: 200px;
-  }
-
   div.block2 {
-  		position: relative;
-  		//background: #D76C6C;
-  		//border: 1px solid white;
+  		display: block;
   		font-size: 28;
   		width: 300;
   		border-radius: 0px 0px 5px 5px;
         text-align: center;
   		color: #8B0000;
-  		text-align: left;
+  		text-align: center;
   		font-family: BuxtonSketch;
+  }
+  div.commondiv {
+  		padding-left: 40px;
+  		padding-right: 40px;
+  		margin-left: 50px;
+  		margin-right: 30px;
+  		display: inline-block;
   }
