@@ -185,3 +185,45 @@ ul.foodvar {
   		margin-right: 30px;
   		display: inline-block;
   }
+  /* Контакты*/
+  div.thirdpage {
+	display: block; 
+	width: 100%;	
+}
+h3.header-contacts {
+	text-align: center;
+	font-weight: 800;
+	font-size: 30;
+	color: #D76C6C;
+}
+hr.hr4 {
+	height: 3;
+	background: #D76C6C;
+	width: 100;
+}
+div.contact {
+	display: block;
+	text-align: center;
+	padding-left: 350px;
+    padding-right: 350px;
+}
+textarea.text {
+	display: block;
+    width: 100%;
+    height: 150px;
+    font-size: 18px;
+}
+input.form1 {
+	height: 30px;
+	font-size: 18px;
+	display: inline-block;
+}
+div.QA {
+	font-size: 20px;
+}
+
+div.QA1 {
+	font-size: 15px;
+	margin: 50px;
+	text-align: center;
+}
